@@ -11,7 +11,7 @@ class CardPerfilLista extends StatelessWidget {
     return Container(
       child: ListView(
         padding: EdgeInsets.only(
-          top: 250.0,
+          top: 300.0,
           right: 25.0,
           left: 25.0,
           bottom: 90.0,
