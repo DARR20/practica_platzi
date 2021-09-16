@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
 
 class Review extends StatelessWidget {
-  String fotoPerfil =
-      'https://cdn2.excelsior.com.mx/media/styles/image800x600/public/pictures/2021/06/09/2592367.jpg';
+  //
 
-  String nombrePerfil = 'Varuna Yasas';
+  Color colorInfo, colorName;
 
-  String detalles = '1 review 5 fotos';
+  String fotoPerfil = '';
 
-  String comentario = 'there is  an amazing place in Sri Lanka';
+  String nombrePerfil = '';
 
-  Review(this.nombrePerfil, this.fotoPerfil, this.comentario, this.detalles);
+  String detalles = '';
+
+  String comentario = '';
+
+  Review(this.nombrePerfil, this.fotoPerfil, this.comentario, this.detalles,
+      this.colorName, this.colorInfo);
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +40,10 @@ class Review extends StatelessWidget {
       child: Text(
         detalles,
         textAlign: TextAlign.left,
-        style: TextStyle(fontSize: 13.0, color: Color(0xFFa3a5a7a)),
+        style: TextStyle(
+          fontSize: 13.0,
+          color: colorInfo,
+        ),
       ),
     );
 
@@ -49,6 +56,7 @@ class Review extends StatelessWidget {
         textAlign: TextAlign.left,
         style: TextStyle(
           fontSize: 17.0,
+          color: colorName,
         ),
       ),
     );
@@ -68,7 +76,9 @@ class Review extends StatelessWidget {
       margin: EdgeInsets.only(top: 10, left: 10),
       child: CircleAvatar(
         //
+
         backgroundImage: NetworkImage(fotoPerfil),
+        backgroundColor: Colors.transparent,
       ),
     );
 

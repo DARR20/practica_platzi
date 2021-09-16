@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_holamundo/platzi_trips.dart';
+import 'package:platzi_holamundo/home/platzi_trips.dart';
 
 void main() {
   runApp(MyApp());

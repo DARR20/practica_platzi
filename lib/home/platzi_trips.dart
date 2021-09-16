@@ -1,7 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'home_trips.dart';
-import 'profile_trips.dart';
-import 'search_trips.dart';
+import 'package:platzi_holamundo/profile/profile_trips.dart';
+import 'package:platzi_holamundo/search_trips.dart';
 
 class PlatziTrips extends StatefulWidget {
   //
@@ -37,11 +38,14 @@ class _PlatziTripsState extends State<PlatziTrips> {
           canvasColor: Colors.white,
           primaryColor: Colors.purple,
         ),
-        child: BottomNavigationBar(
+        child: CupertinoTabBar(
           onTap: onTapTapped,
+          activeColor: Colors.indigoAccent,
+          inactiveColor: Colors.grey.shade600,
           currentIndex: indexTap,
           items: [
             BottomNavigationBarItem(
+              backgroundColor: Colors.amber,
               label: '',
               icon: Icon(Icons.home),
             ),

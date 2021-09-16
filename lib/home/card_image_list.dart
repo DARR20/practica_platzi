@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
-import 'package:platzi_holamundo/card_image.dart';
+import 'package:platzi_holamundo/home/card_image.dart';
 
 class CardImageList extends StatelessWidget {
   @override
